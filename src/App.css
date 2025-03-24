@@ -28,6 +28,18 @@
   color: #61dafb;
 }
 
+/* Estilização dos pontinhos de paginação */
+.swiper-pagination-bullet {
+  background-color: rgba(255, 255, 255, 0.5); /* Cor clara com transparência */
+  width: 10px; /* Tamanho do pontinho */
+  height: 10px; /* Tamanho do pontinho */
+  transition: background-color 0.3s ease; /* Transição suave */
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #ffffff; /* Cor clara sólida para o pontinho ativo */
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);

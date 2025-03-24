@@ -1,0 +1,141 @@
+[
+  {
+    "img": "/assets/images/img1.jpeg",
+    "model": "HYUNDAI - HB20 Platinum 1.0 TURBO Flex Aut",
+    "km": 66000,
+    "year": 2022,
+    "price": 77900,
+    "info": [
+      "Laudo Cautelar Aprovado",
+      "Manual e chave reserva",
+      "Partida STAR/STOP",
+      "Ar condicionado digital",
+      "Kit Multimídia",
+      "Volante multifuncional",
+      "Sensor e câmera de ré",
+      "Piloto automático",
+      "Rodas de liga leve aro 15",
+      "Pneus seminovos"
+    ]
+  },
+  {
+    "img": "/assets/images/img2.jpeg",
+    "model": "HONDA/HR-V EXL 1.8 Flex Aut",
+    "km": 97000,
+    "year": 2020,
+    "price": 110900,
+    "info": [
+      "Laudo Cautelar Aprovado",
+      "Único dono",
+      "Manual e chave reserva",
+      "Kit Multimídia",
+      "Volante multifuncional",
+      "Sensor e câmera de ré",
+      "Sensor frontal anti impacto",
+      "Bancos de couro",
+      "Pneus Dunlop seminovos"
+    ]
+  },
+  {
+    "img": "/assets/images/img3.jpeg",
+    "model": "HONDA/HR-V EXL 1.5 Flex Aut",
+    "km": 14000,
+    "year": 2024,
+    "price": 150900,
+    "info": [
+      "Veículo seminovo",
+      "Única dona",
+      "Garantia HONDA",
+      "2º e 3ª revisões grátis",
+      "Manual e chave reserva",
+      "Kit Multimídia",
+      "Volante multifuncional",
+      "Sensor e câmera de ré",
+      "Bancos de couro",
+      "Pneus Michelin seminovos"
+    ]
+  },
+  {
+    "img": "/assets/images/img4.jpeg",
+    "model": "FIAT/Strada Ultra T200 1.0 TURBO Flex Aut",
+    "km": 20000,
+    "year": 2024,
+    "price": 123900,
+    "info": [
+      "Único dono",
+      "Manual e chave reserva",
+      "Garantia FIAT",
+      "PADDLE SHIFT",
+      "Carregador por indução",
+      "Kit multimídia",
+      "Sensor e câmera de ré",
+      "Volante multifuncional",
+      "Modo SPORT",
+      "Bancos de couro",
+      "Rodas de liga leve",
+      "Pneus seminovos"
+    ]
+  },
+  {
+    "img": "/assets/images/img5.jpeg",
+    "model": "TOYOTA/Hilux SW4 SRV Diesel 4x4 Aut",
+    "km": 317000,
+    "year": 2012,
+    "price": 125000,
+    "info": [
+      "7 lugares",
+      "Manual de revisões",
+      "Kit multimídia",
+      "Volante multifuncional",
+      "Câmera de ré",
+      "Pneus seminovos",
+      "Engate"
+    ]
+  },
+  {
+    "img": "/assets/images/img6.jpeg",
+    "model": "TOYOTA/Hilux SW4 SRX 2.8 Diesel 4x4 Aut",
+    "km": 108000,
+    "year": 2019,
+    "price": 229900,
+    "info": [
+      "7 lugares",
+      "Manual e chave reserva",
+      "Kit multimídia",
+      "Volante multifuncional",
+      "Sensor e câmera de ré",
+      "Pneus Bridgestone seminovos"
+    ]
+  },
+  {
+    "img": "/assets/images/img7.jpeg",
+    "model": "TOYOTA/Corolla GLI 2.0 Flex Aut",
+    "km": 64000,
+    "year": 2021,
+    "price": 108900,
+    "info": [
+      "Laudo Cautelar Aprovado",
+      "Manual e chave reserva",
+      "Kit Multimídia",
+      "Volante multifuncional",
+      "Câmera de ré",
+      "Bancos misto (couro e tecido)",
+      "Pneus novos",
+      "Veículo seminovo"
+    ]
+  },
+  {
+    "img": "/assets/images/img8.jpeg",
+    "model": "HONDA/Fit LX 1.4 Flex",
+    "km": 324000,
+    "year": 2013,
+    "price": 43900,
+    "info": [
+      "Único dono",
+      "Manual e chave reserva",
+      "Som original Honda",
+      "Rodas de liga leve",
+      "Pneus seminovos"
+    ]
+  }
+]
