@@ -23,29 +23,67 @@ Durante o desenvolvimento deste projeto, adquiri novos conhecimentos e refinei h
 - Atenção aos Detalhes : Desde modais até pequenas interações, cada elemento foi cuidadosamente planejado para proporcionar uma experiência fluida.
 ## 📂 Estrutura do Projeto
 A estrutura do projeto segue as melhores práticas de organização, separando componentes, tipos, dados e assets. Aqui está uma visão geral:
-```shell
-meu-projeto/
-├── public/               # Arquivos públicos (imagens, favicon, etc.)
-├── src/
-│   ├── components/       # Componentes React reutilizáveis
-│   │   ├── ContactMap.tsx    # Mapa de contato
-│   │   ├── ContactSection.tsx  # Seção de contato
-│   │   ├── Footer.tsx    # Rodapé da página
-│   │   ├── Header.tsx     # Cabeçalho da página
-│   │   ├── HeroSection.tsx  # Seção principal (hero)
-│   │   ├── InventorySection.tsx  # Seção de estoque de veículos
-│   │   ├── ServiceSection.tsx   # Seção de serviços
-│   │   └── VehicleCard.tsx   # Componente individual de veículo
-│   ├── data/             # Dados mockados (ex.: veículos.json)
-│   ├── types/            # Interfaces TypeScript
-│   ├── App.tsx           # Componente principal da aplicação
-│   ├── index.tsx         # Ponto de entrada da aplicação
-│   └── assets/           # Imagens e outros recursos estáticos
-├── .env                  # Variáveis de ambiente globais
-├── .env.development      # Variáveis de ambiente para desenvolvimento
-├── .env.production       # Variáveis de ambiente para produção
-├── package.json          # Dependências e scripts do projeto
-└── README.md             # Este arquivo :)
+```bash
+── .gitignore
+├── LICENSE
+├── README.md
+├── package-lock.json
+├── package.json
+├── postcss.config.cjs
+├── public
+    ├── FEED.png
+    ├── assets
+    │   └── images
+    │   │   ├── facebook-icon.svg
+    │   │   ├── gas-station-petrol-station-svgrepo-com.svg
+    │   │   ├── gearshift-shift-svgrepo-com (1).svg
+    │   │   ├── gearshift-shift-svgrepo-com.svg
+    │   │   ├── img1.jpeg
+    │   │   ├── img2.jpeg
+    │   │   ├── img3.jpeg
+    │   │   ├── img4.jpeg
+    │   │   ├── img5.jpeg
+    │   │   ├── img6.jpeg
+    │   │   ├── img7.jpeg
+    │   │   ├── img8.jpeg
+    │   │   ├── information-button-svgrepo-com.svg
+    │   │   ├── instagram-icon.svg
+    │   │   ├── odometer-svgrepo-com.svg
+    │   │   └── whatsapp-icon.svg
+    ├── index.html
+    ├── logo-mm.png
+    ├── manifest.json
+    └── robots.txt
+├── src
+    ├── App.css
+    ├── App.test.tsx
+    ├── App.tsx
+    ├── assets
+    │   └── images
+    │   │   ├── FEED.png
+    │   │   ├── logo-mm.png
+    │   │   └── whatsapp-icon.svg
+    ├── components
+    │   ├── ContactMap.tsx
+    │   ├── ContactSection.tsx
+    │   ├── Footer.tsx
+    │   ├── Header.tsx
+    │   ├── HeroSection.tsx
+    │   ├── InventorySection.tsx
+    │   ├── ServiceSection.tsx
+    │   └── VehicleCard.tsx
+    ├── data
+    │   └── vehicles.json
+    ├── index.css
+    ├── index.tsx
+    ├── logo.svg
+    ├── react-app-env.d.ts
+    ├── reportWebVitals.ts
+    ├── setupTests.ts
+    └── types
+    │   └── types.ts
+├── tailwind.config.js
+└── tsconfig.json        # Este arquivo :)
 ```
 ## 🚀 Como Executar o Projeto
 Siga as etapas abaixo para clonar e executar o projeto localmente:
@@ -53,7 +91,7 @@ Siga as etapas abaixo para clonar e executar o projeto localmente:
 ### 1. Clonar o Repositório:
 ```bash
 git clone https://github.com/Drufontael/carshop-LP.git
-cd carshop-lp
+cd carshop-LP
 ```
 ### 2. Instalar as Dependências
    
@@ -89,7 +127,7 @@ A aplicação estará disponível em http://localhost:3000 .
 
 **4.Design Responsivo :** Funciona perfeitamente em dispositivos móveis, tablets e desktops.
 
-**Faixa de Destaque :** Identifica veículos semi-novos com uma faixa destacada.
+**5.Faixa de Destaque :** Identifica veículos semi-novos com uma faixa destacada.
 
 ## 🤝 Contribuições
 Se você quiser contribuir para este projeto, fique à vontade para abrir uma issue ou enviar um pull request. Toda ajuda é bem-vinda! 😊
