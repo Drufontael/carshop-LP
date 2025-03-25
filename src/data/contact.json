@@ -1,0 +1,10 @@
+{
+    "address": "Av. Multirão, Qd. 78, Lt. 23E - St. Bueno, Goiânia, GO - CEP:74215-240",
+    "phone": "(62) 98447-1302",
+    "email": "five5motors@gmail.com",
+    "socialMedia": [
+        { "name": "WhatsApp", "link": "https://wa.me/5562984471302", "icon": "/assets/images/whatsapp-icon.svg" },
+        { "name": "Instagram", "link": "https://instagram.com/vendasmmmotors", "icon": "/assets/images/instagram-icon.svg" },
+        { "name": "Facebook", "link": "https://facebook.com/vendasmmmotors", "icon": "/assets/images/facebook-icon.svg" }
+    ]
+}
