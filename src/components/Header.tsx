@@ -1,15 +1,19 @@
-import React from 'react';
-import { ReactComponent as Icon } from '../assets/images/whatsapp-icon.svg';
-import logo from '../assets/images/logo-mm.png';
-import { Disclosure, DisclosureButton, DisclosurePanel } from '@headlessui/react';
-import contactInfo from '../data/contact.json' // Componente de menu toggle
+import React from "react";
+import { ReactComponent as Icon } from "../assets/images/whatsapp-icon.svg";
+import logo from "../assets/images/logo-carshop.png";
+import {
+  Disclosure,
+  DisclosureButton,
+  DisclosurePanel,
+} from "@headlessui/react";
+import contactInfo from "../data/contact.json"; // Componente de menu toggle
 
 const Header: React.FC = () => {
   // Definir os links de navegação
   const navigation = [
-    { name: 'Estoque', href: '#estoque' },
-    { name: 'Serviços', href: '#servicos' },
-    { name: 'Localização', href: '#localizacao' },
+    { name: "Estoque", href: "#estoque" },
+    { name: "Serviços", href: "#servicos" },
+    { name: "Localização", href: "#localizacao" },
   ];
 
   return (
@@ -19,11 +23,18 @@ const Header: React.FC = () => {
           <>
             {/* Container principal */}
             <div className="mx-auto flex justify-between items-center px-4">
-              {/* Logo */}
-              <img src={logo} alt="Logo da loja" className="w-auto h-16 object-cover" />
+              <div className="flex items-center space-x-1">
+                {/* Logo */}
+                <img
+                  src={logo}
+                  alt="Logo da loja"
+                  className="w-auto h-16 object-cover"
+                />
+                <h1 className="text-xl">CARSHOP</h1>
+              </div>
 
               {/* Links de navegação (visível apenas em telas maiores) */}
-              <div className="hidden sm:flex space-x-4 items-center">
+              <div className="hidden md:flex space-x-3 items-center">
                 {navigation.map((item) => (
                   <a
                     key={item.name}
@@ -37,22 +48,24 @@ const Header: React.FC = () => {
                 {/* Botão "Fale conosco" (visível apenas em telas maiores) */}
                 <a
                   href="https://wa.me/5562984471302"
-                  target='_blank'
-                  rel='noopener noreferrer'
-                  className="flex items-center bg-green-500 px-4 py-2 rounded-lg shadow-md hover:bg-green-600 hover:translate-y-0.5 transition-transform">
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center bg-green-500 px-4 py-2 rounded-lg shadow-md hover:bg-green-600 hover:translate-y-0.5 transition-transform"
+                >
                   <Icon className="w-6 h-6 mr-2" />
                   Fale conosco
                 </a>
               </div>
 
               {/* Ícones do menu toggle e WhatsApp (visível apenas em telas menores) */}
-              <div className="sm:hidden flex items-center space-x-4">
+              <div className="md:hidden flex items-center space-x-4">
                 {/* Botão WhatsApp simplificado */}
                 <a
                   href={contactInfo.socialMedia[0].link}
-                  target='_blank'
-                  rel='noopener noreferrer'
-                  className="p-2 bg-green-500 rounded-full shadow-md hover:bg-green-600 hover:translate-y-0.5 transition-transform">
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="p-2 bg-green-500 rounded-full shadow-md hover:bg-green-600 hover:translate-y-0.5 transition-transform"
+                >
                   <Icon className="w-6 h-6" />
                 </a>
 
@@ -97,7 +110,7 @@ const Header: React.FC = () => {
             </div>
 
             {/* Menu toggle (visível apenas em telas menores) */}
-            <DisclosurePanel className="sm:hidden">
+            <DisclosurePanel className="md:hidden">
               <div className="px-2 pt-2 pb-3 space-y-1">
                 {navigation.map((item) => (
                   <DisclosureButton

@@ -1,7 +1,7 @@
 // src/components/ContactSection.tsx
 import React from 'react';
 import ContactMap from './ContactMap';
-import logo from '../assets/images/logo-mm.png';
+import logo from '../assets/images/logo-carshop.png';
 import contactInfo from '../data/contact.json'
 
 
