@@ -8,11 +8,13 @@ import "../index.css";
 import VehicleCard from "./VehicleCard";
 import { Vehicle } from "../types/types";
 import vehicles from "../data/vehicles.json";
+import CustomAlert from "./CustomAlert";
 
 
 
 const InventorySection: React.FC = () => {
   const [selectedVehicle, setSelectedVehicle] = useState<Vehicle | null>(null);
+  const [isAlertOpen, setIsAlertOpen] = useState(false);
 
   const openModal = (vehicle: Vehicle) => {
     setSelectedVehicle(vehicle);
@@ -22,10 +24,18 @@ const InventorySection: React.FC = () => {
     setSelectedVehicle(null);
   };
 
+  const openAlert = () => {
+    setIsAlertOpen(true);
+  };
+
+  const closeAlert = () => {
+    setIsAlertOpen(false);
+  };
+
   return (
     <section
       id="estoque"
-      className="px-4 py-8 bg-gray-900 font-poppins text-white"
+      className="px-4 py-8 bg-gray-900 font-poppins text-white mb-10"
     >
       <h2 className="text-2xl font-bold text-center mb-8">
         Escolha Seu Automóvel
@@ -50,7 +60,11 @@ const InventorySection: React.FC = () => {
       >
         {vehicles.map((vehicle, index) => (
           <SwiperSlide key={index}>
-            <VehicleCard vehicle={vehicle} onInfoClick={openModal} />
+            <VehicleCard 
+            vehicle={vehicle} 
+            onInfoClick={openModal}
+            onContactClick={openAlert} 
+            />
           </SwiperSlide>
         ))}
       </Swiper>
@@ -94,6 +108,12 @@ const InventorySection: React.FC = () => {
           </div>
           
         </div>
+      )}
+      {isAlertOpen && (
+        <CustomAlert
+          message="Esta é uma landing page de portfólio. O botão não possui funcionalidade."
+          onClose={closeAlert}
+        />
       )}
     </section>
   );

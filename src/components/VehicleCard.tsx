@@ -7,9 +7,10 @@ import { transform } from 'typescript';
 interface VehicleCardProps {
   vehicle: Vehicle;
   onInfoClick: (vehicle: Vehicle) => void;
+  onContactClick: () => void;
 }
 
-const VehicleCard: React.FC<VehicleCardProps> = ({ vehicle, onInfoClick }) => {
+const VehicleCard: React.FC<VehicleCardProps> = ({ vehicle, onInfoClick, onContactClick }) => {
   
 
   return (
@@ -43,7 +44,7 @@ const VehicleCard: React.FC<VehicleCardProps> = ({ vehicle, onInfoClick }) => {
           <button className="bg-blue-500 text-white px-3 py-1 rounded hover:bg-blue-600 transition-colors" onClick={() => onInfoClick(vehicle)}>
             Info
           </button>
-          <button className="bg-green-500 text-white px-3 py-1 rounded hover:bg-green-600 transition-colors">
+          <button className="bg-green-500 text-white px-3 py-1 rounded hover:bg-green-600 transition-colors" onClick={() => onContactClick()}>
             Contato
           </button>
         </div>

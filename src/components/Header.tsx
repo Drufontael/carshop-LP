@@ -1,7 +1,8 @@
 import React from 'react';
 import { ReactComponent as Icon } from '../assets/images/whatsapp-icon.svg';
 import logo from '../assets/images/logo-mm.png';
-import { Disclosure, DisclosureButton, DisclosurePanel } from '@headlessui/react'; // Componente de menu toggle
+import { Disclosure, DisclosureButton, DisclosurePanel } from '@headlessui/react';
+import contactInfo from '../data/contact.json' // Componente de menu toggle
 
 const Header: React.FC = () => {
   // Definir os links de navegação
@@ -48,7 +49,7 @@ const Header: React.FC = () => {
               <div className="sm:hidden flex items-center space-x-4">
                 {/* Botão WhatsApp simplificado */}
                 <a
-                  href="https://wa.me/5562984471302"
+                  href={contactInfo.socialMedia[0].link}
                   target='_blank'
                   rel='noopener noreferrer'
                   className="p-2 bg-green-500 rounded-full shadow-md hover:bg-green-600 hover:translate-y-0.5 transition-transform">
