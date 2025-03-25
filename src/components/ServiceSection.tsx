@@ -24,6 +24,7 @@ const ServiceSection = () => {
     const data = {
       user_name: formData.get("name"),
       user_phone: formData.get("phone"),
+      user_email: formData.get("email"),
       car_brand_model: formData.get("brand-model"),
       car_year: formData.get("year"),
       car_mileage: formData.get("mileage"),
@@ -130,6 +131,23 @@ const ServiceSection = () => {
                   required
                 />
               </div>
+              {/*email*/}
+              <div>
+                <label
+                  htmlFor="email"
+                  className="block text-sm font-medium mb-1"
+                >
+                  E-mail
+                </label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  placeholder="Ex.: seunome@dominio.com"
+                  className="w-full px-3 py-2 rounded-md bg-gray-700 text-white focus:outline-none focus:ring-2 focus:ring-orange-500"
+                  required
+                />
+              </div>
 
               {/* Marca/Modelo */}
               <div>
@@ -148,67 +166,69 @@ const ServiceSection = () => {
                   required
                 />
               </div>
+              <div className="flex space-x-4">
+                {/* Ano de Fabricação */}
+                <div>
+                  <label
+                    htmlFor="year"
+                    className="block text-sm font-medium mb-1"
+                  >
+                    Ano de Fabricação
+                  </label>
+                  <input
+                    type="number"
+                    id="year"
+                    name="year"
+                    placeholder="Ex.: 2020"
+                    className="w-full px-3 py-2 rounded-md bg-gray-700 text-white focus:outline-none focus:ring-2 focus:ring-orange-500"
+                    required
+                  />
+                </div>
 
-              {/* Ano de Fabricação */}
-              <div>
-                <label
-                  htmlFor="year"
-                  className="block text-sm font-medium mb-1"
-                >
-                  Ano de Fabricação
-                </label>
-                <input
-                  type="number"
-                  id="year"
-                  name="year"
-                  placeholder="Ex.: 2020"
-                  className="w-full px-3 py-2 rounded-md bg-gray-700 text-white focus:outline-none focus:ring-2 focus:ring-orange-500"
-                  required
-                />
+                {/* Quilometragem */}
+                <div>
+                  <label
+                    htmlFor="mileage"
+                    className="block text-sm font-medium mb-1"
+                  >
+                    Quilometragem
+                  </label>
+                  <input
+                    type="number"
+                    id="mileage"
+                    name="mileage"
+                    placeholder="Ex.: 30000"
+                    className="w-full px-3 py-2 rounded-md bg-gray-700 text-white focus:outline-none focus:ring-2 focus:ring-orange-500"
+                    required
+                  />
+                </div>
               </div>
+              <div className="flex space-x-4">
+                {/* Leilão */}
+                <div className="flex items-center">
+                  <input
+                    type="checkbox"
+                    id="auction"
+                    name="auction"
+                    className="mr-2"
+                  />
+                  <label htmlFor="auction" className="text-sm">
+                    Este carro foi leiloado?
+                  </label>
+                </div>
 
-              {/* Quilometragem */}
-              <div>
-                <label
-                  htmlFor="mileage"
-                  className="block text-sm font-medium mb-1"
-                >
-                  Quilometragem
-                </label>
-                <input
-                  type="number"
-                  id="mileage"
-                  name="mileage"
-                  placeholder="Ex.: 30000"
-                  className="w-full px-3 py-2 rounded-md bg-gray-700 text-white focus:outline-none focus:ring-2 focus:ring-orange-500"
-                  required
-                />
-              </div>
-
-              {/* Leilão */}
-              <div className="flex items-center">
-                <input
-                  type="checkbox"
-                  id="auction"
-                  name="auction"
-                  className="mr-2"
-                />
-                <label htmlFor="auction" className="text-sm">
-                  Este carro foi leiloado?
-                </label>
-              </div>
-
-              {/* Sinistro */}
-              <div className="flex items-center">
-                <input
-                  type="checkbox"
-                  id="accident"
-                  name="accident"
-                  className="mr-2"
-                />
-                <label htmlFor="accident" className="text-sm">
-                  Este carro sofreu sinistro?
-                </label>
+                {/* Sinistro */}
+                <div className="flex items-center">
+                  <input
+                    type="checkbox"
+                    id="accident"
+                    name="accident"
+                    className="mr-2"
+                  />
+                  <label htmlFor="accident" className="text-sm">
+                    Este carro sofreu sinistro?
+                  </label>
+                </div>
               </div>
 
               {/* Radio Button: Avaliação ou Consignação */}
