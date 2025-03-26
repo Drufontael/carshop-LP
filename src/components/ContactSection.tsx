@@ -29,7 +29,7 @@ const ContactSection: React.FC = () => {
 
         <div className="flex flex-col justify-center">
           <h2 className="text-2xl font-bold mb-4">Entre em Contato</h2>
-          <p className="mb-2">{contactInfo.address}</p>
+          <address className="mb-2">{contactInfo.address}</address>
           <p className="mb-2">Telefone: {contactInfo.phone}</p>
           <p className="mb-4">E-mail: {contactInfo.email}</p>
           <div className="flex space-x-4">
