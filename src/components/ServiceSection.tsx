@@ -57,7 +57,7 @@ const ServiceSection = () => {
   };
 
   return (
-    <section id="servicos" className="p-4 bg-gray-900 text-white font-poppins">
+    <section id="servicos" className="p-4">
       {/* Grid de serviços */}
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
         <div className="text-center p-4">

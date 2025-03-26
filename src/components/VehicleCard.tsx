@@ -1,6 +1,5 @@
 import React from 'react';
 import { Vehicle } from '../types/types';
-import { transform } from 'typescript';
 
 
 

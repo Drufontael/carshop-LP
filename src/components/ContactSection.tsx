@@ -14,7 +14,7 @@ const ContactSection: React.FC = () => {
   };
 
   return (
-    <section id='localizacao' className="py-12 bg-gray-900 text-white font-poppins z-1">
+    <section id='localizacao' className="py-12 z-1">
       <div className="container mx-auto px-4 grid grid-cols-1 lg:grid-cols-2 gap-8">
         {/* Mapa */}
         <div>

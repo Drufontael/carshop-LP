@@ -10,7 +10,7 @@ import CustomAlert from "./CustomAlert";
 const HeroSection: React.FC = () => {
   const [isAlertOpen, setIsAlertOpen] = useState(false);
 
-  const openAlert = (e:React.FormEvent) => {
+  const openAlert = (e: React.FormEvent) => {
     e.preventDefault();
     setIsAlertOpen(true);
   };
@@ -20,26 +20,28 @@ const HeroSection: React.FC = () => {
   };
 
   return (
-    <section className="relative italic font-poppins h-svh bg-gray-900 text-white mb-10">
-      <Swiper
-        modules={[Autoplay, EffectFade]}
-        spaceBetween={0}
-        slidesPerView={1}
-        autoplay={{ delay: 5000 }}
-        loop
-        //effect="fade"
-        speed={2000}
-      >
-        {vehicles.map((vehicle, index) => (
-          <SwiperSlide key={index}>
-            <img
-              src={vehicle.img}
-              alt={`Foto do modelo ${vehicle.model}`}
-              className="w-full h-svh object-cover opacity-30"
-            />
-          </SwiperSlide>
-        ))}
-      </Swiper>
+    <section className="relative italic min-h-[600px] mb-10 overflow-hidden">
+      <div className="absolute w-full h-fit">
+        <Swiper
+          modules={[Autoplay, EffectFade]}
+          spaceBetween={0}
+          slidesPerView={1}
+          autoplay={{ delay: 5000 }}
+          loop
+          //effect="fade"
+          speed={2000}
+        >
+          {vehicles.map((vehicle, index) => (
+            <SwiperSlide key={index}>
+              <img
+                src={vehicle.img}
+                alt={`Foto do modelo ${vehicle.model}`}
+                className="w-full h-svh object-cover opacity-30"
+              />
+            </SwiperSlide>
+          ))}
+        </Swiper>
+      </div>
 
       <div className="absolute top-0 left-0 w-full h-full md:flex md:items-center z-10">
         <div className="h-1/3 mx-auto text-center content-center max-w-lg z-10">

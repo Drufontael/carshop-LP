@@ -35,7 +35,7 @@ const InventorySection: React.FC = () => {
   return (
     <section
       id="estoque"
-      className="px-4 py-8 bg-gray-900 font-poppins text-white mb-10"
+      className="relative px-4 py-8 mb-10"
     >
       <h2 className="text-2xl font-bold text-center mb-8">
         Escolha Seu Automóvel

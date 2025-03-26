@@ -8,14 +8,16 @@ import Footer from './components/Footer';
 
 function App() {
   return (
-    <div className='bg-gray-900'>
+    <>
       <Header/>
-      <HeroSection/>
-      <InventorySection/>
-      <ServiceSection/>
-      <ContactSection/>
-      <Footer/>
-    </div>
+      <main className='bg-gray-900 font-poppins text-white oppacity-90 flex flex-col justify-between'>
+        <HeroSection/>
+        <InventorySection/>
+        <ServiceSection/>
+        <ContactSection/>
+      </main>
+      <Footer/>    
+    </>
   );
 }
 
